@@ -1,0 +1,11 @@
+{
+  "name": "theme-wordpress",
+  "version": "1.0.0",
+  "description": "Template theme for WordPress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "cherkozyanovvladislav@gmail.com",
+  "license": "ISC"
+}

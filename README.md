@@ -1,0 +1,1 @@
+# Template theme for WordPress
