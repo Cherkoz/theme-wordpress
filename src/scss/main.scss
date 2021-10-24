@@ -1,0 +1,11 @@
+:root {
+    --color-text: #000;
+    --color-bg: #fff;
+}
+
+body {
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
+
+@import './media';

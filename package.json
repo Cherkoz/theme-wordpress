@@ -4,8 +4,18 @@
   "description": "Template theme for WordPress",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "start": "webpack --watch"
   },
   "author": "cherkozyanovvladislav@gmail.com",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.4.0",
+    "mini-css-extract-plugin": "^2.4.3",
+    "node-sass": "^6.0.1",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "sass-loader": "^12.2.0",
+    "webpack": "^5.59.1",
+    "webpack-cli": "^4.9.1"
+  }
 }
