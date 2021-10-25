@@ -5,21 +5,33 @@ const minify = require('optimize-css-assets-webpack-plugin');
  
 module.exports = {
 	mode: 'development', // production
-	entry: './src/index.js',
+	entry: ['@babel/polyfill', './src/index.js'],
 	output: {
 		path: path.resolve(__dirname, 'assets'),
 		filename: 'scripts.js'
 	},
 	module: {
-		rules: [{
-			test:/\.(s*)css$/,
-			use: [
-				miniCss.loader,
-				'css-loader',
-				'postcss-loader',
-				'sass-loader',
-			]
-		}]
+		rules: [
+			{
+				test:/\.(s*)css$/,
+				use: [
+					miniCss.loader,
+					'css-loader',
+					'postcss-loader',
+					'sass-loader',
+				]
+			},
+			{
+				test: /\.m?js$/,
+				exclude: /node_modules/,
+				use: {
+					loader: 'babel-loader',
+					options: {
+						presets: ['@babel/preset-env']
+					}
+				}
+			}
+		]
 	},
 	optimization: {
 		minimizer: [
