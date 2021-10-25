@@ -8,4 +8,10 @@ body {
     background-color: var(--color-bg);
 }
 
+.text-autoprefixer {
+    display: flex;
+    transition: 0.3s;
+    user-select: none;
+}
+
 @import './media';

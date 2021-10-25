@@ -1,9 +1,10 @@
 const path = require('path');
 const miniCss = require('mini-css-extract-plugin');
 const minify = require('optimize-css-assets-webpack-plugin');
+
  
 module.exports = {
-	mode: 'development',
+	mode: 'development', // production
 	entry: './src/index.js',
 	output: {
 		path: path.resolve(__dirname, 'assets'),
@@ -15,6 +16,7 @@ module.exports = {
 			use: [
 				miniCss.loader,
 				'css-loader',
+				'postcss-loader',
 				'sass-loader',
 			]
 		}]
