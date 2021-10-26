@@ -154,7 +154,7 @@ function theme_scripts_head() {
 add_action( 'wp_enqueue_scripts', 'theme_scripts_head' );
 
 function theme_scripts_footer() {
-	wp_enqueue_script( 'main-js', get_template_directory_uri() . '/assets/scripts.js' );
+	wp_enqueue_script( 'main-js', get_template_directory_uri() . '/assets/js/scripts.js' );
 }
 add_action('wp_footer', 'theme_scripts_footer');
 

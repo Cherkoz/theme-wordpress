@@ -7,7 +7,7 @@ module.exports = {
 	mode: 'development', // production
 	entry: ['@babel/polyfill', './src/index.js'],
 	output: {
-		path: path.resolve(__dirname, 'assets'),
+		path: path.resolve(__dirname, 'assets/js'),
 		filename: 'scripts.js'
 	},
 	module: {
@@ -30,6 +30,13 @@ module.exports = {
 						presets: ['@babel/preset-env']
 					}
 				}
+			},
+			{
+				test: /\.(png|jpg|jpeg|svg|gif)$/,
+				type: 'asset/resource',
+				generator: {
+					filename: '../img/[name][ext]'
+				}
 			}
 		]
 	},
@@ -40,7 +47,7 @@ module.exports = {
 	},
 	plugins: [
 		new miniCss({
-			filename: './css/style.css',
+			filename: '../css/style.css',
 		}),
 	]
 };
