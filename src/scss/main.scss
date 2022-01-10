@@ -3,19 +3,27 @@
     --color-bg: #fff;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: var(--color-text);
     background-color: var(--color-bg);
 }
 
-.text-autoprefixer {
-    display: flex;
-    transition: 0.3s;
-    user-select: none;
-}
+@media screen and (max-width: 1199px) {}
+@media screen and (max-width: 992px) {}
+@media screen and (max-width: 768px) {}
+@media screen and (max-width: 576px) {}
 
-.div-img {
-    background-image: url(../img/bg.jpeg);
-}
-
-@import './media';
+// UI
+@import './UI/buttons.scss';
+@import './UI/inputs.scss';
+@import './UI/links.scss';
