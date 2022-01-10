@@ -4,9 +4,9 @@
   "description": "Template theme for WordPress",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode development",
+    "build-dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "start": "webpack --watch"
+    "dev": "webpack --watch"
   },
   "author": "cherkozyanovvladislav@gmail.com",
   "license": "ISC",
