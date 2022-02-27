@@ -1,6 +1,6 @@
 :root {
-    --color-text: #000;
-    --color-bg: #fff;
+    --color-black: #000;
+    --color-white: #fff;
 }
 
 * {
@@ -14,8 +14,20 @@ html {
 }
 
 body {
-    color: var(--color-text);
-    background-color: var(--color-bg);
+    color: var(--color-black);
+    background-color: var(--color-white);
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--color-white);
+}
+
+.site-content {
+    flex: 1 0 auto;
 }
 
 @media screen and (max-width: 1199px) {}
@@ -27,3 +39,7 @@ body {
 @import './UI/buttons.scss';
 @import './UI/inputs.scss';
 @import './UI/links.scss';
+
+// components
+@import './components/header.scss';
+@import './components/footer.scss';
