@@ -1,1 +1,1 @@
-console.log('scripts js');
+import './menu.js';

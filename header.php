@@ -25,5 +25,21 @@
 <div class="wrapper">
 
 	<header class="site-header">
-		
+		<div class="container">
+			<div class="site-header__logo">
+				Logo
+			</div>
+			<div class="hamburger">
+				<input class="checkbox" type="checkbox" name="" id="checkbox-menu" />
+				<div class="hamburger__line"></div>
+				<div class="hamburger__line"></div>
+				<div class="hamburger__line"></div>
+			</div>
+		</div>
 	</header><!-- #site-header -->
+
+	<nav id="nav-menu">
+		<div class="container">
+			<?php wp_nav_menu(); ?>
+		</div>
+	</nav>

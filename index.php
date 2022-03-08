@@ -16,7 +16,9 @@ get_header();
 ?>
 
 	<main class="site-content">
-
+		<div class="container">
+			Content
+		</div>
 	</main><!-- #site-content -->
 
 <?php

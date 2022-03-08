@@ -2,20 +2,20 @@
 
 After downloading the theme, install node_modules:
 ```
-npm i
+npm i or yarn install
 ```
 
 Build a project for development
 ```
-yarn build-dev
+npm run build-dev or yarn build-dev
 ```
 
 Build a project for production
 ```
-yarn build
+npm run build or yarn build
 ```
 
 Enter development mode
 ```
-yarn dev
+npm run dev or yarn dev
 ```
